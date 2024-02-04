@@ -30,7 +30,7 @@ public class Surtidor
      */
     private Empleado empleadoAsignado;
 
-    public Surtidor( Map<String, TipoGasolina> tiposGasolina, Empleado empleado )
+	public Surtidor( Map<String, TipoGasolina> tiposGasolina, Empleado empleado )
     {
         this.empleadoAsignado = empleado;
         this.tiposGasolina = tiposGasolina;
@@ -38,7 +38,8 @@ public class Surtidor
         galonesVendidos = new HashMap<String, Double>( );
         for( String nombreTipo : tiposGasolina.keySet( ) )
         {
-            galonesVendidos.put( nombreTipo, new Double( 0 ) );
+            galonesVendidos.put( nombreTipo, Double.valueOf(0));
+            
         }
     }
 
@@ -54,7 +55,13 @@ public class Surtidor
      */
     public Double getGalonesVendidos( String nombreTipoGasolina )
     {
-        return galonesVendidos.get( nombreTipoGasolina );
+    	if ( galonesVendidos.get( nombreTipoGasolina ) <0)
+    	{
+    		return galonesVendidos.get( nombreTipoGasolina )*-1;
+    	}
+    	
+   		return galonesVendidos.get( nombreTipoGasolina);
+    
     }
 
     /**

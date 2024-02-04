@@ -1,0 +1,13 @@
+tipo:Extra:11000:147.0
+tipo:Corriente:16000:181.0
+tipo:Diesel:10000:101.0
+tipo:Premium:20000:19785.0
+surtidor:Dionisio Diaz:Extra:3.0:Corriente:0.0:Diesel:0.0:Premium:35.0
+surtidor:Tobias Thompson:Extra:0.0:Corriente:0.0:Diesel:1.0:Premium:0.0
+surtidor:July Autum:Extra:0.0:Corriente:5.0:Diesel:0.0:Premium:60.0
+surtidor:Andy Phillipe:Extra:0.0:Corriente:14.0:Diesel:0.0:Premium:90.0
+empleado:Andy Phillipe:2024000
+empleado:Winter Goldberg:0
+empleado:July Autum:1280000
+empleado:Tobias Thompson:190000
+empleado:Dionisio Diaz:1333000
